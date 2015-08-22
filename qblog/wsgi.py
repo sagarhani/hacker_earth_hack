@@ -1,16 +1,14 @@
 """
-WSGI config for hacker_earth_hack project.
+WSGI config for qblog project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
-https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
+https://docs.djangoproject.com/en/dev/howto/deployment/wsgi/
 """
 
 import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "qblog.settings")
 
 from django.core.wsgi import get_wsgi_application
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "hacker_earth_hack.settings")
-
 application = get_wsgi_application()
